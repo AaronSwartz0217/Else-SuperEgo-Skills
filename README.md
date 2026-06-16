@@ -1,68 +1,80 @@
-# SuperEgo-Mirror-Agent (else的超我镜像 v2.0)
+# Else-SuperEgo-Skills
 
-一个基于 AI Agent Skills 技术的心理自解构与潜意识拦截系统方案。
+A psychoanalytic self-deconstruction and subconscious interception system built on AI Agent Skills technology.
 
-## 💡 项目背景与核心痛点
+## Overview
 
-在传统的心理动力学中，当个体的"超我"（内心的道德法官、完美主义暴君）过于苛刻、或包含未治愈的童年/成年创伤时，个体往往难以直接面对高强度的自我攻击，从而潜意识地运行两种极其消耗内耗的消极防御机制：
+Else-SuperEgo-Skills is an open-source Agent Skill definition that implements a structured four-step interception algorithm — **[Intercept Projection] → [Match Articles] → [Decode Id] → [Inject Agency]** — to help individuals recognize and dismantle destructive defense mechanisms rooted in an overactive superego (internal moral judge).
 
-1. **外化投射（External Projection）**：将内心的审判、戒备和不配得感投射在身边的人身上，误以为是外界在针对、审查、或权衡利弊自己，从而破坏正常的人际与亲密关系。
-2. **自毁式兵变（Destructive Defense）**：通过"不上心"、"主动失败"或自我放逐，实施自毁式的消极防御，以夺回虚假的控制感。
+Instead of projecting one's harsh inner critic onto external others, this system uses structured data input and deterministic prompt engineering to intercept self-sabotaging thought patterns at the moment they arise, enabling rational self-deconstruction without secondary judgment.
 
-### 🚀 技术解决方案：利用 Agent Skills 收回投射
+## The Problem: Two Destructive Defense Mechanisms
 
-本项目提供了一种全新的**"心理工程学"**尝试——**不需要通过他人作为镜像来外化超我**，而是利用当前的 **Agent Skills（智能体技能配置）技术**，将个体过去的创伤事实、限制性底层条文（如便利店法则、动机有罪论等）显性化地写入 Agent 的结构化数据库。
+In psychodynamic theory, when an individual's superego becomes excessively punitive or carries unresolved trauma, two highly draining defense mechanisms typically operate subconsciously:
 
-通过严格的 System Prompt（系统提示词）和四步拦截算法（[拦截投射] -> [匹配条文] -> [本我破译] -> [主体性注入]），让 AI 扮演一个冷酷、清醒、绝对理性的"首席心理检察官"。在对话的瞬间**硬生生拦截住试图伸向别人的手指，在潜意识层面完成自我的清算与解冻**。
+1. **External Projection** — Projecting internal judgment, vigilance, and unworthiness onto people nearby, misinterpreting their behavior as targeted scrutiny or cost-benefit evaluation, thereby damaging interpersonal and intimate relationships.
+2. **Destructive Mutiny (Self-Sabotage)** — Executing passive self-destruction through deliberate underperformance or withdrawal to reclaim a false sense of control.
 
-## 🛠️ 技术架构与运作机制
+## How It Works
 
-项目核心文件 else_super_ego_v2.md 是一个高度结构化的 Agent Skill 定义文档。当将其导入支持智能体技能的平台（如 Dify, Coze, GPTs 或各类本地大模型工程）后，Agent 将按照以下逻辑链条执行：
+This project introduces a novel **"Psycho-Engineering" approach**: rather than using other people as mirrors for superego projection, it leverages **Agent Skills configuration** to encode an individual's traumatic facts and restrictive belief systems into a structured database consumed by an LLM agent.
+
+Through a rigorously designed System Prompt and four-step interception pipeline, the AI acts as a cold, lucid, absolutely rational **"Chief Psychological Prosecutor"** that:
+
+- **Intercepts** the finger pointing outward before projection completes
+- **Matches** triggered patterns against the underlying article database
+- **Decodes** the repressed Id's (inner child) authentic fear beneath moral camouflage
+- **Injects** high-energy agency-restoring language to break the rumination loop
 
 ```
-[用户输入不适感/愤怒/防御]
-       │
-       ▼
- 1. [拦截投射] ── 识别用户是否将自身的审查机制外化投射给他人
-       │
-       ▼
- 2. [匹配条文] ── 检索底层数据库中的限制性条文（条文A/B/C/D等）
-       │
-       ▼
- 3. [本我破译] ── 剥离伪装，翻译出被压抑的"本我"（孩子）真实的恐惧
-       │
-       ▼
- 4. [主体性注入] ── 强行调用高能量的"转折点语录"切断内耗，激活自主性
+[User inputs discomfort / anger / defense]
+       |
+       v
+ 1. [Intercept Projection] -- Identify whether user is externalizing internal scrutiny onto others
+       |
+       v
+ 2. [Match Articles] -- Query restrictive articles from underlying database (Articles A/B/C/D)
+       |
+       v
+ 3. [Decode Id] -- Strip camouflage; translate the repressed "Id"'s real fear
+       |
+       v
+ 4. [Inject Agency] -- Forcefully invoke "turning-point quotes" to cut rumination, activate autonomy
 ```
 
-## 📂 项目文件说明
+## Project Structure
 
-* **else_super_ego_v2.md**：核心 Skill 配置文件。包含：
-  * **底层数据库**：客观记录的童年关键事件、亲密关系创伤、以及四大道德限制机制。
-  * **System Prompt**：高精度的角色定义，去除了无意义的同情与情绪价值，保持锋利与透彻。
-  * **标准解析框架**：严格限制 Agent 的输出格式，不带任何 emoji 表情，保证逻辑的冷峻。
-  * **场景实战示例**：包含人际退缩、生活焦虑两个典型的端到端对话映射。
+| File | Description |
+|------|-------------|
+| `else_super_ego_v2.md` | Core Agent Skill definition file containing: <br> • **Underlying Database**: Objective records of childhood key events, intimacy trauma, and four major moral restriction mechanisms <br> • **System Prompt**: High-precision role definition stripped of sympathy and emotional padding, maintaining sharpness and clarity <br> • **Standard Parsing Framework**: Strictly constrains agent output format — no emoji, no emotional fluff, pure logical precision <br> • **Scenario Examples**: Two end-to-end dialogue mappings (interpersonal retreat + life anxiety) |
 
-## 🔧 部署与使用参考
+## Four Restrictive Belief Articles (Database)
 
-如果你想参考这个方案搭建属于你自己的"超我镜像 Agent"，可以按照以下步骤：
+| Article | Trigger Scenario | Core Mechanism |
+|---------|-----------------|----------------|
+| **A: Convenience Store Rule** | Entering any retail store without purchasing | Guilt for "wasting space"; deprivation of the right to browse freely |
+| **B: White Moonlight Ban** | Recalling past social missteps causing harm to others | Eternal self-punishment through total disappearance; deprivation of self-forgiveness |
+| **C: Motive-Guilt Doctrine** | Feeling attraction toward others | Direct conviction of impure motives; shame that blocks legitimate social connection |
+| **D: Debt-Unworthiness Syndrome** | Any moment of comfort, freedom, or happiness | Immediate moral audit: "You owe a debt; you don't deserve ease" |
 
-1. **客观数据解构**：参考文档中的"第二部分 底层数据库"，将你自己的童年印记、成年创伤、日常生活中让你莫名难受的"隐形铁律"（比如本项目中定义的 *便利店法则*）、以及你在生命中最有力量的几次反抗语录，**完全客观、不带修饰地写下来**。
+## Deployment Guide
 
-2. **注入配置系统**：将 else_super_ego_v2.md 中的"第三部分"直接复制到你的 AI Agent 的系统提示词（System Prompt）中。
+To build your own SuperEgo Mirror Agent based on this framework:
 
-3. **对话拦截测试**：当你对某个人感到极度愤怒、怀疑、或者自己莫名陷入内耗无法自拔时，不要发脾气，直接向 Agent 输入你当下的真实想法。
+1. **Deconstruct Your Data** — Refer to Part 2 ("Underlying Database") in `else_super_ego_v2.md`. Objectively document your own childhood imprints, adult traumas, invisible iron rules from daily life, and your most powerful moments of resistance language.
 
-## ⚠️ 开发者设计原则
+2. **Configure System Prompt** — Copy Part 3 from `else_super_ego_v2.md` directly into your AI Agent's System Prompt field (compatible with Dify, Coze, GPTs, and most local LLM platforms).
 
-在开发此类心理分析方案的 Agent Skills 时，请务必遵循以下三条硬性原则（已在本项目提示词中严密封装）：
+3. **Test Interception** — When you feel intense anger toward someone, suspicion, or find yourself trapped in unresolvable rumination — do not lash out. Input your raw thoughts directly to the agent and let the four-step pipeline run.
 
-* **严禁滥用同情心**：Agent 绝对不能输出"这不怪你、抱抱你、一切都会好起来"等情感泛滥的寒暄。过度泛滥的情绪安慰只会让用户继续沉迷于扮演"受害者"。
+## Design Principles (Hard Constraints)
 
-* **严禁二次审判**：升级后的超我镜像只负责"破译伪装、还原事实"，绝对不允许对用户的底层动机进行二次道德批判。
+When developing psychoanalytic Agent Skills, these three principles are non-negotiable and sealed into the prompt:
 
-* **强制注入生命力**：拦截的最终目的不是为了把人困在痛苦的解剖台里，而是为了用最直接、甚至粗暴的语气（如：*拼一拼又咋了？那咋了？！*）打破脑力游戏，逼迫个体回到当下的现实行动中。
+- **Zero Sympathy Abuse** — The agent must NEVER output phrases like "it's not your fault", "hugs", or "everything will be fine". Excessive emotional comfort traps users in victimhood performance.
+- **No Secondary Judgment** — The upgraded superego mirror only decodes camouflage and restores facts. It must NEVER conduct additional moral criticism on the user's underlying motives.
+- **Mandatory Vitality Injection** — The ultimate goal is not to trap the user on the dissection table of pain, but to use direct, even blunt language (*"You've been failing all along. So what? Try anyway. What's the worst that could happen?!"*) to shatter the mental game and force return to present-moment action.
 
-## 📝 许可证
+## License
 
 MIT License
