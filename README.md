@@ -58,6 +58,23 @@ Through a rigorously designed System Prompt and four-step interception pipeline,
 | **Standard Parsing Framework** | Strictly constrains agent output format — no emoji, pure logical precision |
 | **Scenario Examples** (`Part 4`) | End-to-end dialogue mappings for common trigger scenarios |
 
+### Project Structure
+
+```
+Else-SuperEgo-Skills/
+├── README.md                          # Bilingual project documentation (this file)
+├── paper.md                           # Mini-paper: theoretical framework & system design
+├── SUPER_EGO_SKILL_TEMPLATE.md        # Fill-in-the-blank template for building your own skill
+└── (else_super_ego_v2.md)             # Author's private skill file (not in repo)
+```
+
+| File | Status | Description |
+|------|--------|-------------|
+| `README.md` | Public | Bilingual documentation, architecture overview, build guide |
+| `paper.md` | Public | Academic mini-paper: psychodynamic theory + technical mechanism |
+| `SUPER_EGO_SKILL_TEMPLATE.md` | Public | User-fillable template with guided fields for custom skills |
+| `else_super_ego_v2.md` | **Private** | Author's personal psychological data (excluded via .gitignore) |
+
 ### Four Restrictive Belief Articles (Reference Template)
 
 | Article | Trigger Scenario | Core Mechanism |
@@ -194,6 +211,23 @@ Else-SuperEgo-Skills 是一套开源的 **Agent Skill 定义框架**，通过结
 | **系统提示词**（第三部分） | 高精度角色定义，去除同情与情绪填充，保持锋利透彻 |
 | **标准解析框架** | 严格约束输出格式 — 无 emoji、无情绪废话、纯逻辑精度 |
 | **场景实战示例**（第四部分） | 常见触发场景的端到端对话映射 |
+
+### 项目结构
+
+```
+Else-SuperEgo-Skills/
+├── README.md                          # 双语项目文档（本文件）
+├── paper.md                           # 迷你论文：理论框架与系统设计
+├── SUPER_EGO_SKILL_TEMPLATE.md        # 填空式模板：用于构建自定义技能
+└── (else_super_ego_v2.md)             # 作者私有技能文件（未入库）
+```
+
+| 文件 | 状态 | 说明 |
+|------|------|------|
+| `README.md` | 公开 | 双语文档、架构总览、构建指南 |
+| `paper.md` | 公开 | 学术迷你论文：心理动力学理论 + 技术机制 |
+| `SUPER_EGO_SKILL_TEMPLATE.md` | 公开 | 用户可填写的引导式模板 |
+| `else_super_ego_v2.md` | **私有** | 作者个人心理数据（通过 .gitignore 排除） |
 
 ### 四大限制性信念条文（参考模板）
 
